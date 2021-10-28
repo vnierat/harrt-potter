@@ -1,3 +1,4 @@
+import BooksCart from './components/booksCart';
 import BooksList from './components/booksList';
 import Navbar from './components/Navbar';
 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
         <Navbar />
         <BooksList />
+        <BooksCart/>
     </div>
   );
 }

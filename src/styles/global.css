@@ -52,14 +52,15 @@ header .titleHeader {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #2e2e2b;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 13%;
   margin: 20px 0;
   padding: 5px;
-  border-radius: 5px;
 }
 
 .bookItem .bookTitle {
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -75,7 +76,6 @@ header .titleHeader {
   color: #fff;
   font-weight: 700;
   border: none;
-  padding: 5px 0;
-  border-radius: 5px;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=global.css.map */

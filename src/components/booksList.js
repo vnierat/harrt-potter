@@ -29,15 +29,21 @@ class BooksList extends React.Component {
         if(!isLoaded){
             return <div>Chargement...</div>
         }
-
-        let components = books.map(book =>  
-            <Book key={book.isbn} book={book} />
-        )
         
         return (
-        <div className="listItem">
-            {components}
-        </div>)
+            <div className="listItem">
+                {books.map((book, index) => {
+                    return(
+                       <Book key={index} book={book}/> 
+                    )
+                })}
+
+            </div>
+        )
+            
+            
+            
+        
     }
 }
 
