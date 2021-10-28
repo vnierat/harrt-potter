@@ -1,0 +1,71 @@
+$base-color: #e7e412;
+$white: #fff;
+$title-color: #2e2e2b;
+$success-color: #178d31;
+
+header {
+  padding: 15px 0;
+  background: $base-color;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .iconLogo {
+    width: 30px;
+    margin-right: 7px;
+  }
+
+  .titleHeader {
+    color: $title-color;
+    display: inline;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.listItem {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bookItem {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $title-color;
+  width: 13%;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 5px;
+
+  .bookTitle {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .addToCartButton {
+    margin-top: 10px;
+    background: $success-color;
+    color: $white;
+    font-weight: 700;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+}

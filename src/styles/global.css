@@ -1,0 +1,81 @@
+header {
+  padding: 15px 0;
+  background: #e7e412;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .iconLogo {
+  width: 30px;
+  margin-right: 7px;
+}
+
+header .titleHeader {
+  color: #2e2e2b;
+  display: inline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.listItem {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bookItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #2e2e2b;
+  width: 13%;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bookItem .bookTitle {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.bookItem img {
+  width: 100%;
+}
+
+.bookItem .addToCartButton {
+  margin-top: 10px;
+  background: #178d31;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=global.css.map */
