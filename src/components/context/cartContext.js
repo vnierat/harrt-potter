@@ -10,9 +10,9 @@ export const CartProvider = (props) => {
   return (
     <CartContext.Provider value={[cart, setCart]}>
          <RemoveCartContext.Provider
-        value={useCallback(item => {
+        value={useCallback(book => {
           const newItems = itemsRef.current.filter(
-            _item => _item.id !== item.id
+            _book=> _book.key !== book.key
           );
           setCart(newItems);
         }, [])}
