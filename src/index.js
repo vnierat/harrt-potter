@@ -1,17 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import Navbar from './components/Navbar';
+import BooksList from './components/booksList';
+import { CartProvider } from './components/context/cartContext';
+import './styles/global.css';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Cart } from './components/booksCart';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <CartProvider>
+      <div>
+      <Navbar/>
+      <BooksList/>
+      <Cart/>
+      </div>
+    </CartProvider>
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+render(<App />, document.getElementById('root'));

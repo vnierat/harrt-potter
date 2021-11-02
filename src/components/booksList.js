@@ -1,6 +1,6 @@
 import React from "react";
 import { getAllBooks } from "../helpers/api";
-import Book from "./book";
+import BookArticle from "./book";
 
 class BooksList extends React.Component {
     constructor(props){
@@ -25,19 +25,21 @@ class BooksList extends React.Component {
 
 
     render() {
-        const { isLoaded, books } = this.state;
+        const { isLoaded,books} = this.state;
         if(!isLoaded){
             return <div>Chargement...</div>
         }
         
         return (
-            <div className="listItem">
-                {books.map((book, index) => {
-                    return(
-                       <Book key={index} book={book}/> 
-                    )
-                })}
+            <div className="listContainer">
+                <div className="listItems">
+                    {books.map((book) => {
+                        return(
+                            <BookArticle key={book.isbn} book={book}/>
+                        )
+                    })}
 
+                </div>
             </div>
         )
             

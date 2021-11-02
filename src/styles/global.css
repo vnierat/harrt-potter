@@ -1,6 +1,6 @@
 header {
-  padding: 15px 0;
-  background: #e7e412;
+  padding: 15px 15px;
+  background: #414253;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,40 +8,82 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
 }
 
 header .iconLogo {
   width: 30px;
-  margin-right: 7px;
+  margin-right: 3.5px;
 }
 
 header .titleHeader {
-  color: #2e2e2b;
-  display: inline;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-transform: uppercase;
-}
-
-.listItem {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  -ms-box-orient: horizontal;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -moz-flex;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+header .cartCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .cartCounter .cartNav {
+  font-size: 20px;
+}
+
+header .cartCounter .counter {
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  margin-left: 7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 40px;
+  background: #f15858;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #fff;
+  font-size: 9px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.listContainer {
+  display: block;
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+  padding: 15px 10px;
+}
+
+.listItems {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .bookItem {
@@ -52,11 +94,15 @@ header .titleHeader {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 13%;
   margin: 20px 0;
-  padding: 5px;
+  width: 300px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  padding: 10px;
+  -webkit-box-shadow: 2px 8px 20px #ddd;
+          box-shadow: 2px 8px 20px #ddd;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 .bookItem .bookTitle {
@@ -64,6 +110,13 @@ header .titleHeader {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  height: 80px;
+}
+
+.bookItem .bookPrice {
+  color: #5f5f5f;
+  font-weight: 500;
+  margin-top: 15px;
 }
 
 .bookItem img {
@@ -77,5 +130,6 @@ header .titleHeader {
   font-weight: 700;
   border: none;
   padding: 10px 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=global.css.map */
